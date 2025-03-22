@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySenza - Profumo d'Ambiente</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #fefefe;
+    }
+    header {
+      background: linear-gradient(to right, #b2f0d5, #a6e7ea);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      transition: background 0.5s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      background-color: #3da49d;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .cta-button:hover {
+      background-color: #2b8a82;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .feature, .product {
+      flex: 1 1 calc(30% - 20px);
+      margin: 10px;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .product:hover, .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .product button {
+      padding: 10px 20px;
+      background-color: #3da49d;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .product button:hover {
+      background-color: #2b8a82;
+    }
+    .newsletter input, .newsletter button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 1em;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .feature, .product {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Trasforma la tua casa in un'oasi di benessere</h1>
+  <p>Scopri le nostre fragranze esclusive per ambienti che risvegliano i sensi.</p>
+  <a href="#prodotti" class="cta-button">Scopri le fragranze</a>
+</header>
+
+<section>
+  <h2>L'essenza del benessere a casa tua</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Ingredienti Naturali</h3>
+      <p>Solo essenze pure e naturali per un profumo autentico e sicuro.</p>
+    </div>
+    <div class="feature">
+      <h3>Design Elegante</h3>
+      <p>Diffusori raffinati che impreziosiscono ogni angolo della casa.</p>
+    </div>
+    <div class="feature">
+      <h3>Profumo a lunga durata</h3>
+      <p>Formule pensate per avvolgere ogni ambiente con dolcezza per ore.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prodotti">
+  <h2>Le nostre fragranze più amate</h2>
+  <div class="products">
+    <div class="product">
+      <img src="img/essenza-mediterranea.jpg" alt="Essenza Mediterranea">
+      <h4>Essenza Mediterranea</h4>
+      <p>Aromi di agrumi e brezza marina per un tocco di freschezza.</p>
+      <button onclick="window.location.href='https://mysenza.com/prodotti/essenza-mediterranea'">Scopri di più</button>
+    </div>
+    <div class="product">
+      <img src="img/fior-di-loto.jpg" alt="Fior di Loto">
+      <h4>Fior di Loto</h4>
+      <p>Note floreali e rilassanti per il tuo benessere quotidiano.</p>
+      <button onclick="window.location.href='https://mysenza.com/prodotti/fior-di-loto'">Scopri di più</button>
+    </div>
+    <div class="product">
+      <img src="img/legno-e-vaniglia.jpg" alt="Legno e Vaniglia">
+      <h4>Legno e Vaniglia</h4>
+      <p>Caldo e avvolgente, perfetto per creare un'atmosfera serena.</p>
+      <button onclick="window.location.href='https://mysenza.com/prodotti/legno-e-vaniglia'">Scopri di più</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Cosa dicono i nostri clienti</h2>
+  <p>“Da quando uso MySenza, il mio salotto ha una nuova anima. Fragranze meravigliose!” – Martina, Firenze</p>
+  <p>“La qualità è eccellente e il design è perfetto per il mio studio.” – Davide, Milano</p>
+</section>
+
+<section class="newsletter">
+  <h2>Iscriviti alla newsletter</h2>
+  <p>Offerte, consigli e ispirazioni direttamente nella tua inbox.</p>
+  <input type="email" placeholder="Inserisci la tua email">
+  <button>Iscriviti</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 MySenza. Tutti i diritti riservati.</p>
+  <p><a href="https://mysenza.com/contatti">Contattaci</a> | <a href="https://mysenza.com/privacy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
