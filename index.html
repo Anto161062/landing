@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MySenza - Profumo d'Ambiente</title>
   <style>
-    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+    }
     header {
-      background-color: #3da49d;
+      background: #e0f7f2 url('https://www.transparenttextures.com/patterns/hexellence.png') repeat;
+      background-size: contain;
       color: #fff;
       padding: 60px 20px;
       text-align: center;
@@ -20,7 +27,7 @@
       border-radius: 10px;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-top: 15px;
       background-color: rgba(0, 0, 0, 0.15);
       display: inline-block;
@@ -47,6 +54,11 @@
       max-width: 1000px;
       margin: auto;
     }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2b8a82;
+    }
     .features, .products {
       display: flex;
       flex-wrap: wrap;
@@ -57,17 +69,25 @@
       background: #f7f7f7;
       margin: 10px 0;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature:hover, .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     .product img {
       width: 100%;
       max-width: 300px;
       height: auto;
-      border-radius: 6px;
+      border-radius: 10px;
       margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+    .product img:hover {
+      transform: scale(0.95);
     }
     .product a {
       display: inline-block;
@@ -75,33 +95,41 @@
       color: #2b8a82;
       font-weight: bold;
       text-decoration: none;
-      font-size: 1em;
+      font-size: 1.1em;
     }
     .contact-section {
       text-align: center;
       background-color: #3da49d;
-      padding: 40px 20px;
+      padding: 50px 20px;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
       color: white;
     }
+    .contact-section h2 {
+      font-family: Georgia, serif;
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
     .contact-section img {
       width: 160px;
-      margin: 20px auto 10px;
+      margin: 20px auto 20px;
       display: block;
-      border-radius: 12px;
+      border-radius: 0;
+      background: white;
+      padding: 10px;
     }
     .whatsapp-btn, .save-contact-btn, .shop-btn {
       background-color: #2b8a82;
       color: white;
       padding: 12px 24px;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1.1em;
       font-weight: bold;
       margin: 10px auto;
       display: inline-block;
       text-decoration: none;
       min-width: 240px;
+      transition: 0.3s ease;
     }
     .whatsapp-btn:hover, .save-contact-btn:hover, .shop-btn:hover {
       background-color: #247467;
@@ -111,6 +139,7 @@
       color: #fff;
       text-align: center;
       padding: 30px 20px;
+      font-size: 1em;
     }
     footer a {
       color: #fff;
@@ -126,16 +155,23 @@
 
 <header>
   <h1>Ogni goccia ha il suo perché</h1>
-  <p>Scopri le essenze MySenza: trasforma i tuoi ambienti in esperienze sensoriali uniche.</p>
+  <p>Regala alla tua casa un profumo piacevole che accoglie e rilassa.</p>
   <a href="catalogo-generale.pdf" target="_blank" class="cta-button">📘 Scarica il catalogo completo</a>
 </header>
 
 <section>
   <h2>Sensazioni</h2>
+  <p style="font-size: 1.2em; line-height: 1.6em; text-align: center; max-width: 800px; margin: auto;">
+    Non vogliamo che siano semplici profumi.<br>
+    Ci piace l'idea che offrano sensazioni:<br><strong>Amore</strong>, <strong>Benessere</strong>, <strong>Relax</strong>, <strong>Energia</strong>, <strong>Memoria</strong>.
+  </p>
+</section>
+
+<section>
   <div class="features">
-    <div class="feature"><h3>Qualità Garantita</h3><p>Profumazioni di eccellente qualità, selezionate per offrire un'esperienza sensoriale memorabile.</p></div>
-    <div class="feature"><h3>Design Elegante</h3><p>Diffusori raffinati che impreziosiscono ogni angolo della casa.</p></div>
-    <div class="feature"><h3>Profumo a lunga durata</h3><p>Formule pensate per avvolgere ogni ambiente con dolcezza per ore.</p></div>
+    <div class="feature"><h3>Qualità che scalda il cuore</h3><p>Profumazioni scelte con cura per dare piacere, ogni giorno.</p></div>
+    <div class="feature"><h3>Bellezza che arreda l’aria</h3><p>Design elegante che abbellisce senza invadere.</p></div>
+    <div class="feature"><h3>Una presenza leggera e costante</h3><p>Fragranze delicate che accompagnano con dolcezza.</p></div>
   </div>
 </section>
 
@@ -164,7 +200,7 @@
 </section>
 
 <section class="contact-section">
-  <h2>📇 Contatti</h2>
+  <h2>📇 I nostri contatti</h2>
   <a href="contatto.vcf" download>
     <img src="contatto1.png" alt="QR Contatto MySenza" />
   </a><br/>
