@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MySenza - Profumo d'Ambiente</title>
   <style>
-    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; color: #333; background-color: #fefefe; }
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
     header { background: linear-gradient(to right, #b2f0d5, #a6e7ea); color: #fff; padding: 60px 20px; text-align: center; }
     header h1 { font-size: 2.8em; margin-bottom: 10px; }
     header p { font-size: 1.2em; margin-bottom: 30px; }
-    .cta-button { background-color: #3da49d; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s ease, transform 0.2s ease; }
+    .cta-button { background-color: #3da49d; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; display: inline-block; margin: 10px 0; }
     .cta-button:hover { background-color: #2b8a82; transform: scale(1.05); }
     section { padding: 50px 20px; max-width: 1000px; margin: auto; }
     .features, .products { display: flex; flex-wrap: wrap; justify-content: space-between; }
-    .feature, .product { flex: 1 1 calc(30% - 20px); margin: 10px; background-color: #f7f7f7; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s ease, box-shadow 0.3s ease; }
-    .product:hover, .feature:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+    .feature, .product { flex: 1 1 calc(30% - 20px); background: #f7f7f7; margin: 10px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; }
     .product img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px; }
-    .product button { padding: 10px 20px; background-color: #3da49d; border: none; color: #fff; border-radius: 4px; cursor: pointer; transition: background 0.3s ease; }
-    .product button:hover { background-color: #2b8a82; }
-    .newsletter input, .newsletter button { padding: 10px; margin: 5px; font-size: 1em; }
+    .product a, .contact-section a { display: inline-block; margin-top: 10px; color: #3da49d; font-weight: bold; text-decoration: none; }
+    .product:hover, .feature:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+    .contact-section { text-align: center; }
+    .contact-section img { width: 160px; margin: 10px auto; display: block; }
     footer { background: #333; color: #fff; text-align: center; padding: 30px 20px; }
     footer a { color: #fff; margin: 0 10px; text-decoration: underline; }
     @media (max-width: 768px) { .feature, .product { flex: 1 1 100%; } }
@@ -29,13 +29,13 @@
 <header>
   <h1>Ogni goccia ha il suo perché</h1>
   <p>Scopri le essenze MySenza: trasforma i tuoi ambienti in esperienze sensoriali uniche.</p>
-  <a href="#prodotti" class="cta-button">Scopri le fragranze</a>
+  <a href="catalogo-generale.pdf" target="_blank" class="cta-button">📘 Scarica il catalogo completo</a>
 </header>
 
 <section>
-  <h2>L'essenza del benessere a casa tua</h2>
+  <h2>La nostra promessa</h2>
   <div class="features">
-    <div class="feature"><h3>Ingredienti Naturali</h3><p>Solo essenze pure e naturali per un profumo autentico e sicuro.</p></div>
+    <div class="feature"><h3>Qualità Garantita</h3><p>Profumazioni di eccellente qualità, selezionate per offrire un'esperienza sensoriale memorabile.</p></div>
     <div class="feature"><h3>Design Elegante</h3><p>Diffusori raffinati che impreziosiscono ogni angolo della casa.</p></div>
     <div class="feature"><h3>Profumo a lunga durata</h3><p>Formule pensate per avvolgere ogni ambiente con dolcezza per ore.</p></div>
   </div>
@@ -45,49 +45,36 @@
   <h2>Le nostre fragranze più amate</h2>
   <div class="products">
     <div class="product">
-      <img src="vigna-rossa.png" alt="Vigna Rossa">
+      <img src="vigna-rossa.png" alt="Vigna Rossa" />
       <h4>Vigna Rossa</h4>
       <p>Note di uva, frutti rossi e peonia. Calore e intimità per un ambiente conviviale e raffinato.</p>
-      <button onclick="window.location.href='https://anto161062.github.io/mysenza-shop-/'">Scopri di più</button>
+      <a href="vigna-rossa.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
     <div class="product">
-      <img src="citri-fructus.png" alt="Citri Fructus">
+      <img src="citri-fructus.png" alt="Citri Fructus" />
       <h4>Citri Fructus</h4>
       <p>Arancio e limone stimolano l’energia e la freschezza. Ideale per ambienti dinamici e solari.</p>
-      <button onclick="window.location.href='https://anto161062.github.io/mysenza-shop-/'">Scopri di più</button>
+      <a href="citri-fructus.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
     <div class="product">
-      <img src="sapientia.png" alt="Sapientia">
+      <img src="sapientia.png" alt="Sapientia" />
       <h4>Sapientia</h4>
       <p>Ambra, patchouli e sandalo. Profondità, calma e ispirazione per spazi di riflessione e concentrazione.</p>
-      <button onclick="window.location.href='https://anto161062.github.io/mysenza-shop-/'">Scopri di più</button>
+      <a href="sapientia.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
-  </div>
-</section>
-
-<section id="best-seller">
-  <h2>Il più venduto</h2>
-  <div class="products">
     <div class="product" style="flex: 1 1 100%;">
-      <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03 - Fiori">
+      <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03 - Fiori" />
       <h4>Profuma Tessuti 03 - Fiori</h4>
-      <p>Un best seller che profuma capi, armadi e ambienti. Eleganza floreale che dura nel tempo. Fresco, intenso e indimenticabile.</p>
-      <button onclick="window.location.href='https://anto161062.github.io/mysenza-shop-/'">Scopri di più</button>
+      <p>Best seller che profuma capi, armadi e ambienti. Eleganza floreale intensa e persistente.</p>
+      <a href="profuma-tessuti-03.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Cosa dicono i nostri clienti</h2>
-  <p>“Un’atmosfera nuova in casa, ogni fragranza ha una personalità unica!” – Martina, Firenze</p>
-  <p>“Citri Fructus ha trasformato il mio ufficio: è sempre energico e fresco!” – Davide, Milano</p>
-</section>
-
-<section class="newsletter">
-  <h2>Iscriviti alla newsletter</h2>
-  <p>Offerte, consigli e ispirazioni direttamente nella tua inbox.</p>
-  <input type="email" placeholder="Inserisci la tua email">
-  <button>Iscriviti</button>
+<section class="contact-section">
+  <h2>📇 I nostri contatti</h2>
+  <img src="contatto1.png" alt="QR Contatto MySenza" />
+  <a href="contatto.vcf" download>📥 Salva contatto MySenza</a>
 </section>
 
 <footer>
