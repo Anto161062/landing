@@ -19,31 +19,36 @@
       padding: 60px 20px;
       text-align: center;
     }
-    header h1, header p {
-      font-size: 2.6em;
+    header h1 {
+      font-size: 2.8em;
       background-color: rgba(255,255,255,0.8);
       display: inline-block;
-      padding: 10px 20px;
+      padding: 10px 30px;
       border-radius: 10px;
-      color: #2b8a82;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 1.3em;
-      margin-top: 15px;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
     }
     .cta-button {
-      background-color: rgba(255,255,255,0.8);
+      background-color: #ffffff;
       color: #2b8a82;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 14px 26px;
       font-weight: bold;
-      transition: 0.3s;
+      border-radius: 6px;
+      text-decoration: none;
       display: inline-block;
-      margin: 20px 0 10px;
+      margin-top: 20px;
+      border: 2px solid #2b8a82;
     }
     .cta-button:hover {
+      background-color: #d4ede9;
       transform: scale(1.05);
+      transition: 0.3s ease;
     }
     section {
       padding: 40px 20px;
@@ -77,7 +82,6 @@
     .product img {
       width: 100%;
       max-width: 300px;
-      height: auto;
       border-radius: 10px;
       margin-bottom: 15px;
       transition: transform 0.3s ease;
@@ -93,6 +97,39 @@
       text-decoration: none;
       font-size: 1.1em;
     }
+    .contact-section {
+      text-align: center;
+      background: #e0f7f2 url('https://www.transparenttextures.com/patterns/hexellence.png') repeat;
+      padding: 50px 20px;
+      color: #2b8a82;
+    }
+    .btn {
+      background-color: #ffffff;
+      color: #2b8a82;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin: 10px auto;
+      display: inline-block;
+      text-decoration: none;
+      border: 2px solid #2b8a82;
+      min-width: 240px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #d4ede9;
+    }
+    footer {
+      background: #2b8a82;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 1em;
+    }
+    footer p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -100,6 +137,7 @@
 <header>
   <h1>Ogni goccia ha il suo perché</h1>
   <p>Regala alla tua casa un profumo piacevole che accoglie e rilassa.</p>
+  <br />
   <a href="catalogo-generale.pdf" target="_blank" class="cta-button">📘 Scarica il catalogo completo</a>
 </header>
 
@@ -118,6 +156,7 @@
     <div class="feature"><h3>Una presenza leggera e costante</h3><p>Fragranze delicate che accompagnano con dolcezza.</p></div>
   </div>
 </section>
+
 <section id="prodotti">
   <h2>Fragranze più richieste</h2>
   <div class="products">
@@ -134,18 +173,25 @@
       <a href="citri-fructus.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
     <div class="product">
-      <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03 - Fiori" />
-      <h4>Profuma Tessuti 03 - Fiori</h4>
+      <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03" />
+      <h4>Profuma Tessuti 03</h4>
       <p>Best seller che profuma capi, armadi e ambienti. Eleganza floreale intensa e persistente.</p>
       <a href="profuma-tessuti-03.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
   </div>
 </section>
+<section class="contact-section">
+  <h2 style="margin-bottom: 25px;">📲 Clicca o inquadra e salva il contatto</h2>
 
-<section class="contact-section" style="background: #e0f7f2 url('https://www.transparenttextures.com/patterns/hexellence.png') repeat; background-size: contain;">
-  <a href="contatto.vcf" download class="save-contact-btn">📥 Clicca o inquadra e Salva il contatto</a><br/>
-  <a href="https://wa.me/393717771328?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sui%20prodotti%20MySenza." target="_blank" class="whatsapp-btn">💬 Scrivici su WhatsApp</a><br/>
-  <a href="https://anto161062.github.io/mysenza-shop-/" target="_blank" class="shop-btn">🛍️ Vai allo shop</a>
+  <img src="contatto1.png" alt="QR Contatto MySenza" style="width: 160px; margin: 0 auto 30px; display: block;" />
+
+  <a href="https://wa.me/393717771328?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sui%20prodotti%20MySenza." 
+     target="_blank" class="btn">💬 Scrivici su WhatsApp</a><br/>
+
+  <a href="contatto.vcf" download class="btn">📥 Salva contatto MySenza</a><br/>
+
+  <a href="https://anto161062.github.io/mysenza-shop-/" 
+     target="_blank" class="btn">🛍️ Vai allo shop</a>
 </section>
 
 <footer>
