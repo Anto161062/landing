@@ -19,20 +19,18 @@
       padding: 60px 20px;
       text-align: center;
     }
-    header h1 {
-      font-size: 2.8em;
+    header h1, header p {
       background-color: rgba(255,255,255,0.8);
       display: inline-block;
-      padding: 10px 30px;
+      padding: 10px 20px;
       border-radius: 10px;
-      margin-bottom: 10px;
+      margin: 10px 0;
+    }
+    header h1 {
+      font-size: 2.8em;
     }
     header p {
       font-size: 1.3em;
-      background-color: rgba(255,255,255,0.9);
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: inline-block;
     }
     .cta-button {
       background-color: #ffffff;
@@ -87,59 +85,31 @@
       margin-bottom: 15px;
       transition: transform 0.3s ease;
     }
-    .product img:hover {
-      transform: scale(0.95);
-    }
-    .product a {
+    .product a, .btn {
       display: inline-block;
       margin-top: 10px;
       color: #2b8a82;
       font-weight: bold;
       text-decoration: none;
       font-size: 1.1em;
-    }
-    .btn {
-      background-color: #ffffff;
-      color: #2b8a82;
-      padding: 12px 24px;
-      border-radius: 5px;
-      font-size: 1.1em;
-      font-weight: bold;
-      margin: 10px auto;
-      display: inline-block;
-      text-decoration: none;
+      padding: 10px 20px;
       border: 2px solid #2b8a82;
-      min-width: 240px;
+      border-radius: 5px;
+      background-color: #fff;
       transition: 0.3s ease;
     }
-    .btn:hover {
+    .product a:hover, .btn:hover {
       background-color: #d4ede9;
-    }
-    .contact-section {
-      text-align: center;
-      background: #e0f7f2 url('https://www.transparenttextures.com/patterns/hexellence.png') repeat;
-      background-size: contain;
-      padding: 50px 20px;
-      color: #2b8a82;
-    }
-    footer {
-      background: #2b8a82;
-      color: #fff;
-      text-align: center;
-      padding: 25px 20px;
-      font-size: 1em;
-    }
-    footer p {
-      margin: 0;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Ogni goccia ha il suo perché</h1>
-  <p>Regala alla tua casa un profumo piacevole che accoglie e rilassa.</p>
-  <br />
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <h1>Ogni goccia ha il suo perché</h1>
+    <p>Regala alla tua casa un profumo piacevole che accoglie e rilassa.</p>
+  </div>
   <a href="catalogo-generale.pdf" target="_blank" class="cta-button">📘 Scarica il catalogo completo</a>
 </header>
 
@@ -167,19 +137,33 @@
       <h4>Vigna Rossa</h4>
       <p>Note di uva, frutti rossi e peonia. Calore e intimità per un ambiente conviviale e raffinato.</p>
       <a href="vigna-rossa.pdf" target="_blank">📄 Scheda prodotto</a>
+      <a href="https://wa.me/393717771328?text=Vorrei%20acquistare%20Vigna%20Rossa" target="_blank" class="btn">🛒 Acquistalo subito</a>
     </div>
     <div class="product">
       <img src="citri-fructus.png" alt="Citri Fructus" />
       <h4>Citri Fructus</h4>
       <p>Arancio e limone stimolano l’energia e la freschezza. Ideale per ambienti dinamici e solari.</p>
       <a href="citri-fructus.pdf" target="_blank">📄 Scheda prodotto</a>
+      <a href="https://wa.me/393717771328?text=Vorrei%20acquistare%20Citri%20Fructus" target="_blank" class="btn">🛒 Acquistalo subito</a>
     </div>
     <div class="product">
       <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03" />
       <h4>Profuma Tessuti 03</h4>
       <p>Best seller che profuma capi, armadi e ambienti. Eleganza floreale intensa e persistente.</p>
       <a href="profuma-tessuti-03.pdf" target="_blank">📄 Scheda prodotto</a>
+      <a href="https://wa.me/393717771328?text=Vorrei%20acquistare%20Profuma%20Tessuti%2003" target="_blank" class="btn">🛒 Acquistalo subito</a>
     </div>
+  </div>
+</section>
+
+<section style="text-align: center; margin-top: 60px;">
+  <div style="background: gold; color: white; font-size: 1.5em; font-weight: bold; padding: 15px 20px; border-radius: 10px; display: inline-block;">
+    Compra 2 e io Te ne porto 3!
+  </div>
+  <div style="margin-top: 10px; background: #f9f9f9; padding: 15px 20px; max-width: 600px; margin-left: auto; margin-right: auto; border-radius: 8px; font-size: 1em; line-height: 1.6;">
+    La promo è valida per <strong>24 ore</strong> a partire da quando ricevi il messaggio.<br>
+    I prodotti li scegli <strong>Tu</strong>, il terzo è compreso.<br>
+    Possono essere diversi tra loro ma il formato deve essere <strong><u>200ml</u></strong> o <strong><u>500ml</u></strong> per tutti i prodotti scelti.
   </div>
 </section>
 <section class="contact-section">
