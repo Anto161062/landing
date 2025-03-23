@@ -6,25 +6,119 @@
   <title>MySenza - Profumo d'Ambiente</title>
   <style>
     body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
-    header { background: linear-gradient(to right, #b2f0d5, #a6e7ea); color: #fff; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 2.6em; margin-bottom: 10px; }
-    header p { font-size: 1.2em; margin-bottom: 30px; }
-    .cta-button { background-color: #3da49d; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; display: inline-block; margin: 10px 0; }
-    .cta-button:hover { background-color: #2b8a82; transform: scale(1.05); }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .features, .products { display: flex; flex-wrap: wrap; justify-content: space-between; }
-    .feature, .product { flex: 1 1 calc(30% - 20px); background: #f7f7f7; margin: 10px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; }
-    .product img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px; }
-    .product a, .contact-section a { display: inline-block; margin-top: 10px; color: #3da49d; font-weight: bold; text-decoration: none; font-size: 1em; }
-    .product:hover, .feature:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-    .contact-section { text-align: center; }
-    .contact-section a img { width: 180px; margin: 10px auto; display: block; border-radius: 12px; transition: 0.2s ease; }
-    .contact-section a img:hover { transform: scale(1.05); }
-    footer { background: #333; color: #fff; text-align: center; padding: 30px 20px; }
-    footer a { color: #fff; margin: 0 10px; text-decoration: underline; }
-    @media (max-width: 768px) {
-      .feature, .product { flex: 1 1 100%; }
-      header h1 { font-size: 2em; }
+    header {
+      background: linear-gradient(to right, #b2f0d5, #a6e7ea);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.6em;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
+    .cta-button {
+      background-color: #3da49d;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+      margin: 20px 0 10px;
+    }
+    .cta-button:hover {
+      background-color: #2b8a82;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .feature, .product {
+      flex: 1 1 100%;
+      background: #f7f7f7;
+      margin: 10px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3da49d;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .contact-section {
+      text-align: center;
+      background: linear-gradient(to right, #b2f0d5, #a6e7ea);
+      padding: 40px 20px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .contact-section img {
+      width: 160px;
+      margin: 20px auto 10px;
+      display: block;
+      border-radius: 12px;
+    }
+    .whatsapp-btn, .save-contact-btn {
+      background-color: #3da49d;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 10px;
+      display: inline-block;
+      text-decoration: none;
+      min-width: 240px;
+    }
+    .whatsapp-btn:hover, .save-contact-btn:hover {
+      background-color: #2b8a82;
+    }
+    footer {
+      background: #3da49d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+    @media (min-width: 600px) {
+      .product { flex: 1 1 48%; margin: 1%; }
     }
   </style>
 </head>
@@ -37,7 +131,7 @@
 </header>
 
 <section>
-  <h2>La nostra promessa</h2>
+  <h2>Sensazioni</h2>
   <div class="features">
     <div class="feature"><h3>Qualità Garantita</h3><p>Profumazioni di eccellente qualità, selezionate per offrire un'esperienza sensoriale memorabile.</p></div>
     <div class="feature"><h3>Design Elegante</h3><p>Diffusori raffinati che impreziosiscono ogni angolo della casa.</p></div>
@@ -46,7 +140,7 @@
 </section>
 
 <section id="prodotti">
-  <h2>Le nostre fragranze più amate</h2>
+  <h2>Fragranze più amate</h2>
   <div class="products">
     <div class="product">
       <img src="vigna-rossa.png" alt="Vigna Rossa" />
@@ -66,7 +160,7 @@
       <p>Ambra, patchouli e sandalo. Profondità, calma e ispirazione per spazi di riflessione e concentrazione.</p>
       <a href="sapientia.pdf" target="_blank">📄 Scheda prodotto</a>
     </div>
-    <div class="product" style="flex: 1 1 100%;">
+    <div class="product">
       <img src="profuma-tessuti-03.png" alt="Profuma Tessuti 03 - Fiori" />
       <h4>Profuma Tessuti 03 - Fiori</h4>
       <p>Best seller che profuma capi, armadi e ambienti. Eleganza floreale intensa e persistente.</p>
@@ -76,16 +170,13 @@
 </section>
 
 <section class="contact-section">
-  <h2>📇 I nostri contatti</h2>
+  <h2>📇 Contatti</h2>
   <a href="contatto.vcf" download>
     <img src="contatto1.png" alt="QR Contatto MySenza" />
-  </a>
-  <a href="https://wa.me/393717771328?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sui%20prodotti%20MySenza." target="_blank" class="whatsapp-btn" style="background:#25D366; padding:12px 24px; border-radius:5px; color:white; font-weight:bold; text-decoration:none; display:inline-block; margin-top:10px;">
-    💬 Scrivici su WhatsApp
   </a><br/>
-  <a href="contatto.vcf" download style="display:inline-block; margin-top:10px;">📥 Salva contatto MySenza</a>
+  <a href="https://wa.me/393717771328?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sui%20prodotti%20MySenza." target="_blank" class="whatsapp-btn">💬 Scrivici su WhatsApp</a>
+  <a href="contatto.vcf" download class="save-contact-btn">📥 Salva contatto MySenza</a>
 </section>
-
 
 <footer>
   <p>&copy; 2025 MySenza. Tutti i diritti riservati.</p>
